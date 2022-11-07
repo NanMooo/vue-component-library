@@ -1,6 +1,6 @@
 {
-  "name": "nanmo-ui",
-  "version": "1.0.0",
+  "name": "@nanmo/vue-component-library",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -10,6 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "vue": "^3.2.41"
   },
