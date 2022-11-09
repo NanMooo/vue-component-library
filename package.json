@@ -10,9 +10,10 @@
     "import": "./dist/my-component-lib.es.js",
     "require": "./dist/my-component-lib.umd.js"
   },
+  "types": "./dist/types/components/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build"
+    "build": "vite build && vue-tsc"
   },
   "dependencies": {
     "vue": "^3.2.41"

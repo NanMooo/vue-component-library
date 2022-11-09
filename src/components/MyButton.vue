@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { reactive } from 'vue'
 
-interface Props {
+export interface Props {
   primary?: boolean
 }
 
