@@ -1,6 +1,9 @@
 {
   "name": "@nanmoo/vue-component-library",
   "version": "0.0.2",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "files": [
     "dist"
