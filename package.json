@@ -4,6 +4,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "license": "MIT",
   "type": "module",
   "files": [
     "dist"
