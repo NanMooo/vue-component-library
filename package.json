@@ -1,5 +1,5 @@
 {
-  "name": "my-component-lib",
+  "name": "@nanmoo/vue-component-library",
   "version": "0.0.2",
   "type": "module",
   "files": [
