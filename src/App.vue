@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { MyButton } from './components'
-import MyNotificationVue from './notification/MyNotification.vue'
+import { MyNotification } from './components'
+import { NButton } from './components'
 
 let notiStatus = ref(true)
 
@@ -12,12 +13,13 @@ const clearNotification = () => {
 
 <template>
   <MyButton>Hello</MyButton>
-  <MyNotificationVue
+  <MyNotification
     v-if="notiStatus"
     type="success"
     message="成功了"
     @clear-notification="clearNotification"
-  ></MyNotificationVue>
+  ></MyNotification>
+  <NButton>按钮</NButton>
 </template>
 
 <style scoped></style>

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import MyNotification from './../notification/MyNotification.vue'
+import { MyNotification } from '../src/components'
 import { describe, expect, test } from 'vitest'
 
 describe('MyNotification', () => {
