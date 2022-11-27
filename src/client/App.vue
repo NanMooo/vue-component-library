@@ -1,8 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { MyButton } from './components'
-import { MyNotification } from './components'
-import { NButton } from './components'
 
 let notiStatus = ref(true)
 

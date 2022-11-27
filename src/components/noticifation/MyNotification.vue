@@ -1,3 +1,8 @@
+<script lang="ts">
+export default {
+  name: 'MyNotification',
+}
+</script>
 <template>
   <div
     :class="[

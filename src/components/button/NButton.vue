@@ -1,3 +1,8 @@
+<script lang="ts">
+export default {
+  name: 'NButton',
+}
+</script>
 <script setup lang="ts">
 export interface Props {
   type?: 'primary' | 'success' | 'warning' | 'danger' | 'info'
