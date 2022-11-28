@@ -1,8 +1,3 @@
-<script lang="ts">
-export default {
-  name: 'MyNotification',
-}
-</script>
 <template>
   <div
     :class="[
@@ -43,6 +38,12 @@ export default {
     </button>
   </div>
 </template>
+
+<script lang="ts">
+export default {
+  name: 'MyNotification',
+}
+</script>
 <script setup lang="ts">
 import { reactive } from 'vue'
 

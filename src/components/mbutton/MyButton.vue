@@ -1,3 +1,9 @@
+<template>
+  <button class="btn" :class="{ primary }">
+    <slot></slot>
+  </button>
+</template>
+
 <script lang="ts">
 export default {
   name: 'MyButton',
@@ -15,12 +21,6 @@ const props = withDefaults(defineProps<Props>(), {
 })
 const { primary } = reactive(props)
 </script>
-
-<template>
-  <button class="btn" :class="{ primary }">
-    <slot></slot>
-  </button>
-</template>
 
 <style scoped>
 .btn {
