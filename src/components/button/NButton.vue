@@ -34,7 +34,8 @@ const nClass = computed(() => {
   ]
 })
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
+@import './../../styles/varable.css';
 .n-button {
   border: 0;
   padding: 12px 24px;
@@ -56,30 +57,30 @@ const nClass = computed(() => {
   border: 1px solid #dcdfe6;
   &:hover,
   &:focus {
-    color: $primary;
+    color: var(--primary);
     border-color: #c6e2ff;
     background-color: #ecf5ff;
   }
 }
 .n-button-primary {
-  background: $primary;
-  border: 1px solid $primary;
+  background: var(--primary);
+  border: 1px solid var(--primary);
 }
 .n-button-success {
-  background: $success;
-  border: 1px solid $success;
+  background: var(--success);
+  border: 1px solid var(--success);
 }
 .n-button-info {
-  background: $info;
-  border: 1px solid $info;
+  background: var(--info);
+  border: 1px solid var(--info);
 }
 .n-button-warning {
-  background: $warning;
-  border: 1px solid $warning;
+  background: var(--warning);
+  border: 1px solid var(--warning);
 }
 .n-button-danger {
-  background: $danger;
-  border: 1px solid $danger;
+  background: var(--danger);
+  border: 1px solid var(--danger);
 }
 .n-button-disabled {
   opacity: 0.5;
