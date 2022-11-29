@@ -18,7 +18,7 @@
   "types": "./dist/types/components/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vue-tsc",
+    "build": "vite build && vue-tsc --project ./tsconfig.lib.json",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "docs:dev": "vitepress dev docs",

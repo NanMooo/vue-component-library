@@ -41,7 +41,7 @@
 
 <script lang="ts">
 export default {
-  name: 'MyNotification',
+  name: 'NNotification',
 }
 </script>
 <script setup lang="ts">
