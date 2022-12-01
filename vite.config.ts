@@ -18,13 +18,14 @@ export default defineConfig({
         globals: {
           vue: 'Vue',
         },
+        exports: 'named',
       },
     },
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: '@import "./src/styles/global.scss";',
+        additionalData: '@import "./src/styles/varable.scss";',
       },
     },
   },

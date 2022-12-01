@@ -1,8 +1,11 @@
 import { mount } from '@vue/test-utils'
-import { NButton } from '../components/index'
+import NButton from '../components/button/NButton.vue'
 import { describe, expect, test } from 'vitest'
 
 describe('NButton', () => {
+  test('renders the correct style for error', () => {
+    const wrapper = mount(NButton)
+  })
   // test('renders the correct style for primary', () => {
   //   const type = 'primary'
   //   const wrapper = mount(NButton, {

@@ -1,41 +1,30 @@
 <template>
-  <button :class="nClass" :disabled="disabled">
+  <!-- <button
+    :class="[
+      'n-button',
+      type ? `n-button-${props.type}` : '',
+      disabled ? 'n-button-disabled' : '',
+      round ? 'n-button-round' : '',
+    ]"
+    :disabled="disabled"
+  >
     <span><slot></slot></span>
-  </button>
+  </button> -->
 </template>
-<script lang="ts">
-export default {
-  name: 'NButton',
-}
-</script>
-<script setup lang="ts">
-import { computed } from 'vue'
 
-const props = defineProps({
-  type: {
-    type: String,
-    default: 'default',
-  },
-  disabled: {
-    type: Boolean,
-    default: false,
-  },
-  round: {
-    type: Boolean,
-    default: false,
-  },
-})
-const nClass = computed(() => {
-  return [
-    'n-button',
-    `n-button-${props.type}`,
-    props.disabled ? 'n-button-disabled' : '',
-    props.round ? 'n-button-round' : '',
-  ]
-})
+<script setup lang="ts">
+import { reactive } from 'vue'
+
+export interface Props {
+  type?: string
+  message?: string
+}
+
+const props = defineProps<Props>()
+const { type, message } = reactive(props)
 </script>
+
 <style lang="scss">
-@import './../../styles/varable.css';
 .n-button {
   border: 0;
   padding: 12px 24px;

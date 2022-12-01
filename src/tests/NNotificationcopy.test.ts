@@ -1,11 +1,11 @@
 import { mount } from '@vue/test-utils'
-import NNotification from '../components/noticifation/NNotification.vue'
+import NNotificationcopy from '../components/noticifationcopy/NNotificationcopy.vue'
 import { describe, expect, test } from 'vitest'
 
 describe('MyNotification', () => {
   test('renders the correct style for error', () => {
     const type = 'error'
-    const wrapper = mount(NNotification, {
+    const wrapper = mount(NNotificationcopy, {
       props: { type },
     })
     expect(wrapper.classes()).toEqual(
@@ -15,7 +15,7 @@ describe('MyNotification', () => {
 
   test('renders correct style for success', () => {
     const type = 'success'
-    const wrapper = mount(NNotification, {
+    const wrapper = mount(NNotificationcopy, {
       props: { type },
     })
     expect(wrapper.classes()).toEqual(
@@ -25,7 +25,7 @@ describe('MyNotification', () => {
 
   test('renders correct style for info', () => {
     const type = 'info'
-    const wrapper = mount(NNotification, {
+    const wrapper = mount(NNotificationcopy, {
       props: { type },
     })
     expect(wrapper.classes()).toEqual(
@@ -35,7 +35,7 @@ describe('MyNotification', () => {
 
   test('slides down when message is not empty', () => {
     const message = 'success'
-    const wrapper = mount(NNotification, {
+    const wrapper = mount(NNotificationcopy, {
       props: { message },
     })
     expect(wrapper.classes()).toEqual(
@@ -45,14 +45,14 @@ describe('MyNotification', () => {
 
   test('slides up when message is empty', () => {
     const message = ''
-    const wrapper = mount(NNotification, {
+    const wrapper = mount(NNotificationcopy, {
       props: { message },
     })
     expect(wrapper.classes('notification--slide')).toBe(false)
   })
 
   test('emits event when close button is clicked', async () => {
-    const wrapper = mount(NNotification, {
+    const wrapper = mount(NNotificationcopy, {
       data() {
         return {
           clicked: false,
@@ -66,7 +66,7 @@ describe('MyNotification', () => {
 
   test('renders message when message is not empty', () => {
     const message = 'Something happened, try again'
-    const wrapper = mount(NNotification, {
+    const wrapper = mount(NNotificationcopy, {
       props: { message },
     })
     expect(wrapper.find('p').text()).toBe(message)

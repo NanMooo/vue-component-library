@@ -1,6 +1,6 @@
 <template>
   <div class="button-box">
-    <NButton>默认按钮</NButton>
+    <NButton type="default">默认按钮</NButton>
     <NButton type="primary">主要按钮</NButton>
     <NButton type="success">成功按钮</NButton>
     <NButton type="info" round>信息按钮</NButton>
@@ -17,8 +17,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { components } from '../index'
-const { NButton, NNotification } = components
+
+import { NButton, NNotification } from '../index'
 
 let notiStatus = ref(true)
 
