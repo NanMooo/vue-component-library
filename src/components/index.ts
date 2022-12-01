@@ -15,7 +15,5 @@ export const withInstall = <T extends Record<string, any>>(component: T) => {
 }
 
 export const NButton = withInstall(Button)
-
 export const NNotification = withInstall(Notification)
-
 export const NNotificationcopy = withInstall(Notificationcopy)
